@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "tectures": {
+    "all": "dimensionalmachines:block/transpar_planks"
+  }
+}

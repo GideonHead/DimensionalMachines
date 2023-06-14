@@ -1,0 +1,10 @@
+{
+  "block.dimensionalmachines.transpar_wood": "Transpar Wood",
+  "block.dimensionalmachines.transpar_log": "Transpar Log",
+  "block.dimensionalmachines.transpar_planks": "Transpar Planks",
+  "block.dimensionalmachines.transpar_leaves": "Transpar Leaves",
+  "block.dimensionalmachines.transpar_sapling": "Transpar Sapling",
+  "block.dimensionalmachines.stripped_transpar_wood": "Stripped Transpar Wood",
+  "block.dimensionalmachines.stripped_transpar_log": "Stripped Transpar Log",
+  "itemGroup.dimensionalmachines.dimensional_machines_tab": "Dimensional Machines"
+}
