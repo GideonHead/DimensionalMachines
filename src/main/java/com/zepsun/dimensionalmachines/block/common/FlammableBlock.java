@@ -1,14 +1,14 @@
-package com.zepsun.dimensionalmachines.block.tree;
+package com.zepsun.dimensionalmachines.block.common;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class DMFlammableWoodLog extends RotatedPillarBlock {
-
-    public DMFlammableWoodLog(Properties properties) {
+public class FlammableBlock extends Block {
+    public FlammableBlock(BlockBehaviour.Properties properties) {
         super(properties);
     }
 
@@ -24,6 +24,6 @@ public class DMFlammableWoodLog extends RotatedPillarBlock {
 
     @Override
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-        return 5;
+        return 20;
     }
 }

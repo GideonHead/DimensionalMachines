@@ -13,9 +13,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
-public class DMStrippableFlammableWoodLog extends RotatedPillarBlock {
+public class StrippableFlammableWoodLog extends RotatedPillarBlock {
     private Supplier<Block> blockStripped;
-    public DMStrippableFlammableWoodLog(Supplier<Block> strippedVariant, Properties properties) {
+    public StrippableFlammableWoodLog(Supplier<Block> strippedVariant, Properties properties) {
         super(properties);
         this.blockStripped = strippedVariant;
 

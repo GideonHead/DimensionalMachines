@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "dimesnionalmachines:block/transpar_sapling"
+      "model": "dimensionalmachines:block/transpar_sapling"
     }
   }
 }

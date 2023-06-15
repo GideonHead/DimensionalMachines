@@ -1,10 +1,9 @@
 package com.zepsun.dimensionalmachines;
 
-import com.google.common.io.Closer;
 import com.mojang.logging.LogUtils;
-import com.zepsun.dimensionalmachines.block.DMBlocks;
-import com.zepsun.dimensionalmachines.item.DMItems;
-import com.zepsun.dimensionalmachines.tab.DMCreativeTabs;
+import com.zepsun.dimensionalmachines.block.ModBlocks;
+import com.zepsun.dimensionalmachines.item.ModItems;
+import com.zepsun.dimensionalmachines.tab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -22,9 +21,9 @@ public class DimensionalMachines {
     public DimensionalMachines() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        DMItems.register(modEventBus);
-        DMBlocks.register(modEventBus);
-        DMCreativeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        CreativeTabs.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

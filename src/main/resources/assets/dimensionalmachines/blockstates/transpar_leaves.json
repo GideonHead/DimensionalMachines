@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "dimesnionalmachines:block/transpar_leaves"
+      "model": "dimensionalmachines:block/transpar_leaves"
     }
   }
 }

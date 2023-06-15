@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_all",
-  "tectures": {
+  "render_type": "minecraft:cutout",
+  "textures": {
     "all": "dimensionalmachines:block/transpar_leaves"
-  },
-  "render_type": "cutout"
+  }
 }
