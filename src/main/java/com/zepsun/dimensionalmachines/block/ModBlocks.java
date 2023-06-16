@@ -9,6 +9,7 @@ import com.zepsun.dimensionalmachines.world.feature.tree.TransparTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,7 +25,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, DimensionalMachines.MOD_ID);
 
-    // Transpar Wood
+    // Transpar
     public static final RegistryObject<Block> STRIPPED_TRANSPAR_WOOD = registerBlock("stripped_transpar_wood", () -> new FlammableWoodLog(BlockBehaviour.Properties.of().sound(SoundType.WOOD)));
     public static final RegistryObject<Block> TRANSPAR_WOOD = registerBlock("transpar_wood", () -> new StrippableFlammableWoodLog(STRIPPED_TRANSPAR_WOOD, BlockBehaviour.Properties.of().sound(SoundType.WOOD)));
     public static final RegistryObject<Block> STRIPPED_TRANSPAR_LOG = registerBlock("stripped_transpar_log", () -> new FlammableWoodLog(BlockBehaviour.Properties.of().sound(SoundType.WOOD)));
@@ -32,6 +33,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TRANSPAR_PLANKS = registerBlock("transpar_planks", () -> new FlammableBlock(BlockBehaviour.Properties.of().sound(SoundType.WOOD)));
     public static final RegistryObject<Block> TRANSPAR_LEAVES = registerBlock("transpar_leaves", () -> new FlammableBlock(BlockBehaviour.Properties.of().noOcclusion().sound(SoundType.AZALEA_LEAVES)));
     public static final RegistryObject<Block> TRANSPAR_SAPLING = registerBlock("transpar_sapling", () -> new SaplingBlock(new TransparTreeGrower(), BlockBehaviour.Properties.of().sound(SoundType.CHERRY_SAPLING)));
+    public static final RegistryObject<Block> TRANSPAR_COMPOST = registerBlock("transpar_compost", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.ROOTED_DIRT)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
