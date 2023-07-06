@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "dimensionalmachines:block/crepe_myrtle_wood_horizontal_side",
+    "side": "dimensionalmachines:block/crepe_myrtle_wood_horizontal_side"
+  }
+}

@@ -21,6 +21,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
 
+        //transpar
         dropSelf(ModBlocks.TRANSPAR_LEAVES.get());
         dropSelf(ModBlocks.TRANSPAR_LOG.get());
         dropSelf(ModBlocks.TRANSPAR_COMPOST.get());
@@ -29,6 +30,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         dropSelf(ModBlocks.TRANSPAR_WOOD.get());
         dropSelf(ModBlocks.STRIPPED_TRANSPAR_WOOD.get());
         dropSelf(ModBlocks.STRIPPED_TRANSPAR_LOG.get());
+
+        //crepe_myrtle
+        dropSelf(ModBlocks.CREPE_MYRTLE_LEAVES.get());
+        dropSelf(ModBlocks.CREPE_MYRTLE_LOG.get());
+        dropSelf(ModBlocks.CREPE_MYRTLE_COMPOST.get());
+        dropSelf(ModBlocks.CREPE_MYRTLE_PLANKS.get());
+        dropSelf(ModBlocks.CREPE_MYRTLE_SAPLING.get());
+        dropSelf(ModBlocks.CREPE_MYRTLE_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_CREPE_MYRTLE_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_CREPE_MYRTLE_LOG.get());
 
         //add(ModBlocks.EXAMPLE_ORE.get(),
         //        (block) -> createOreDrop(ModBlocks.EXAMPLE_ORE.get(), ModBlocks.EXAMPLE_GEM.get()));

@@ -6,5 +6,16 @@
   "block.dimensionalmachines.transpar_sapling": "Transpar Sapling",
   "block.dimensionalmachines.stripped_transpar_wood": "Stripped Transpar Wood",
   "block.dimensionalmachines.stripped_transpar_log": "Stripped Transpar Log",
+  "block.dimensionalmachines.transpar_compost": "Transpar Compost",
+
+  "block.dimensionalmachines.crepe_myrtle_wood": "Crepe Myrtle Wood",
+  "block.dimensionalmachines.crepe_myrtle_log": "Crepe Myrtle Log",
+  "block.dimensionalmachines.crepe_myrtle_planks": "Crepe Myrtle Planks",
+  "block.dimensionalmachines.crepe_myrtle_leaves": "Crepe Myrtle Leaves",
+  "block.dimensionalmachines.crepe_myrtle_sapling": "Crepe Myrtle Sapling",
+  "block.dimensionalmachines.stripped_crepe_myrtle_wood": "Stripped Crepe Myrtle Wood",
+  "block.dimensionalmachines.stripped_crepe_myrtle_log": "Stripped Crepe Myrtle Log",
+  "block.dimensionalmachines.crepe_myrtle_compost": "Crepe Myrtle Compost",
+
   "itemGroup.dimensionalmachines.dimensional_machines_tab": "Dimensional Machines"
 }

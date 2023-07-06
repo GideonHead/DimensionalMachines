@@ -19,6 +19,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.TRANSPAR_COMPOST);
         blockWithItem(ModBlocks.TRANSPAR_LEAVES);
         blockWithItem(ModBlocks.TRANSPAR_PLANKS);
+
+        // Crepe Myrtle
+        blockWithItem(ModBlocks.CREPE_MYRTLE_COMPOST);
+        blockWithItem(ModBlocks.CREPE_MYRTLE_LEAVES);
+        blockWithItem(ModBlocks.CREPE_MYRTLE_PLANKS);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

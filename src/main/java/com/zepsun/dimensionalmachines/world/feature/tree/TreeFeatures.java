@@ -23,6 +23,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
 public class TreeFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> TRANSPAR_KEY = registerKey("transpar_key");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CREPE_MYRTLE_KEY = registerKey("cepe_myrtle_key");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -36,8 +37,14 @@ public class TreeFeatures {
                 BlockStateProvider.simple(ModBlocks.TRANSPAR_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
-    }
 
+        register(context, CREPE_MYRTLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.CREPE_MYRTLE_LOG.get()),
+                new StraightTrunkPlacer(5, 6, 3),
+                BlockStateProvider.simple(ModBlocks.CREPE_MYRTLE_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+        }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(DimensionalMachines.MOD_ID, name));
